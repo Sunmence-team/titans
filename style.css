@@ -1,0 +1,184 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+*{
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-family: monospace;
+      font-weight: 400;
+    }
+    .navbar form .navbtn,
+    section .card .navbtn,
+    .testimonials .modal-footer .navbtn,
+    .navbar form .navbtn:focus,
+    section .card .navbtn:focus,
+    .testimonials .modal-footer .navbtn:focus{
+      background: #796fab;
+      color: #fff;
+      border: none;
+    }
+    section .card .navbtn2,
+    section .card .navbtn2:focus{
+      background: #E3951E;
+      color: #fff;
+      border: none;
+    }
+    nav .navbar-brand .bb,
+    .titans .card .bb{
+      color: #796fab;
+      font-weight: 700;
+    }
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background-image: linear-gradient(#00000092, #00000089), url(images/img12.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      transition: background-image 0.5s ease-in-out;
+    }
+    #titan1,
+    #titan3{
+      background: #eee;
+    }
+    .titan-socials a{
+      text-decoration: none;
+      position: relative;
+    }
+    .titan-socials .fab{
+      color: #796fab;
+      border: 1px solid #796fab;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+    }
+    .titan-socials .fab:hover{
+      background: #796fab;
+      color: #fff;
+      border: none;
+      transition: all .5s linear;
+    }
+    .titans .side{
+      position: relative;
+      max-width: 100%;
+      z-index: 1;
+    }
+    .titans .side .stones{
+      position: absolute;
+      background-color: #796fab;
+      width: 50%;
+      height: 50%;
+      z-index: -1;
+    }
+    .titans .side .stone1{
+      top: 0;
+      left: 0;
+    }
+    .titans .side .stone2{
+      bottom: 0;
+      right: 0;
+    }
+    .titans .side img{
+      z-index: 2;
+      margin: 0 auto;
+    }
+    .titans .card .side2{
+      display: none;
+    }
+    @media (min-width:250px) and (max-width:767px) {
+      .titans .side1{
+        display: none;
+      }
+      .titans .card .side2{
+        display: flex;
+        justify-content: center;
+      }
+      section .card .navbtn{
+        width: 60% !important;
+      }
+    }
+    .contact{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .contact .fab-col{
+      position: absolute;
+      background-image: url(images/img16.png);
+      background-position: center;
+      background-size: cover;
+      width: 60%;
+      height: 100vh;
+      z-index: -1;
+      animation-name: zoom;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .contact .fab-col1{
+      bottom: -15%;
+      left: -23%;
+    }
+    .contact .fab-col2{
+      top: -15%;
+      left: 65%;
+    }
+    @keyframes zoom {
+      0%{
+        scale: 0.2;
+      }
+      100%{
+        scale: 0.25;
+      }
+    }
+    .contact .card h3{
+      color: #796fab;
+    }
+    .testimonials{
+      background-image: linear-gradient(#2a2a2a3b, #2a2a2ad7), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1200' height='400' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1125%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(129%2c 111%2c 219%2c 0.84)'%3e%3c/rect%3e%3cpath d='M631.3923661811701 305.75172331757847L762.7632201649233 317.2451837588763 774.2566806062212 185.8743297751231 642.885826622468 174.38086933382527z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1303.210795176339 585.9061332747578L1412.9969106612093 582.0723176425162 1409.1630950289677 472.28620215764585 1299.3769795440974 476.12001778988747z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M468.3909799632605 150.99135527723834L545.504230574567 52.48454581053518 437.4934018546449 35.377311154740966z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M690.1270490351153 0.08430886046204478L761.5810113487411 106.01916443222372 867.5158669205027 34.56520211859798 796.061904606877-71.36965345316369z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1104.5783768149033 137.7441314541347L1197.8332448583865 141.00066320506457 1156.0906084630396-0.5099047356253266z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1181.6193597830047 368.00931014434514L1062.5754279054295 374.24813825117053 1068.8142560122549 493.29207012874565 1187.85818788983 487.0532420219203z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M453.17704780148415 170.24894724502832L507.59138224947657 219.2438340497759 553.8765452326018 113.12488897541344z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M132.3317346928514 297.0878163189212L7.300631556236837 288.22504190961666 53.607376027878225 387.53017589531936z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M516.2245199716076 148.69945124969658L597.7826141071582 186.73061512963014 635.8137779870917 105.17252099407952 554.2556838515411 67.14135711414596z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M515.0468781970815 354.4392620963748L472.4811424139677 237.49086418979817 355.53274450739104 280.05659997291195 398.0984802905048 397.0049978794886z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M624.4777196186386 402.16815785176425L720.9041755781205 530.1303869000033 848.8664046263596 433.70393094052133 752.4399486668776 305.7417018922823z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M294.07302415509827-11.66351371559899L291.83587586365115 116.5026260637235 420.0020156429737 118.73977435517058 422.23916393442073-9.426365424151905z' fill='rgba(255%2c 202%2c 40%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1125'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+      background-position: center;
+      background-size: cover;
+    }
+    .testimonials .wrapper{
+      overflow-y: scroll;
+      height: 300px;
+      box-shadow: inset -0px -10px 25px #2A2A2A;
+    }
+    .testimonials .wrapper::-webkit-scrollbar{
+      display: none;
+    }
+    .testimonials .modal .modal2{
+      background: #796fab;
+      color: #fff;
+    }
+    .testimonials .modal-body p{
+      background: #00eb63;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 50%;
+      font-size: 5rem;
+      font-weight: 900;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      border: 5px solid #fff;
+    }
+    footer{
+      background: url(images/img15.png);
+      background-position: 0px 0px;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+    }
+    .footer .card p a::before{
+      content: "</";
+    }
+    .footer .card p a::after{
+      content: ">";
+    }
